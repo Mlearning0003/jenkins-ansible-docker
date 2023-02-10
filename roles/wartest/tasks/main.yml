@@ -2,11 +2,4 @@
   apt:
     name: python-pip
     state: present
-    
-- name: run container
-  docker_container:
-    name: wartest
-    image: "{{ image }}"
-    ports: 8081:8080
-    state: started
- 
+   
